@@ -9,7 +9,7 @@
 
                 <label class="w3-text-teal"><b>Nouvelle catégorie</b></label>
 
-                    <?= $this->Form->control('titre', ['class' => 'w3-input w3-border w3-light-grey','label' =>'']); ?>
+                    <?= $this->Form->control('categorie', ['class' => 'w3-input w3-border w3-light-grey','label' =>'']); ?>
                     
                 <div class="w3-center">
 

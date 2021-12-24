@@ -64,10 +64,10 @@ class TagsTable extends Table
         // il ne peut y avoir de doublon sur les catégories
 
         $validator
-            ->scalar('titre')
-            ->maxLength('titre', 191)
-            ->allowEmptyString('titre')
-            ->add('titre', 'unique', ['rule' => 'validateUnique', 'provider' => 'table','message' => 'Cette catégorie existe déjà.']);
+            ->scalar('categorie')
+            ->maxLength('categorie', 191)
+            ->allowEmptyString('categorie')
+            ->add('categorie', 'unique', ['rule' => 'validateUnique', 'provider' => 'table','message' => 'Cette catégorie existe déjà.']);
 
         return $validator;
     }
@@ -81,7 +81,7 @@ class TagsTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->isUnique(['titre']));
+        $rules->add($rules->isUnique(['categorie']));
 
         return $rules;
     }

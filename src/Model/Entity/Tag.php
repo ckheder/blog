@@ -27,7 +27,7 @@ class Tag extends Entity
      * @var array
      */
     protected $_accessible = [
-        'titre' => true,
+        'categorie' => true,
         'created' => true,
         'modified' => true,
         'articles' => true,
